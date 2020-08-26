@@ -71,7 +71,7 @@ This is probably way more advanced than most people will use, but it's here for 
 Set your HASS URL, and API Token  
 Enter in your script's entity_id that you want to have run when the AH Alert is triggered.  
 
-## [Auction House Items to Monitor]  
+### [Auction House Items to Monitor]  
 Add a seperate section for each AH Item you want to check. Make sure to have it named like the following.  
 The bracketed [AHItem#] must look like that with a unique number for each section.  
 Get the Item ID from wowhead or TSM websites.  
