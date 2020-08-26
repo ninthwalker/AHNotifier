@@ -1,0 +1,80 @@
+[Server Settings]
+Region = US
+Server = Sargeras
+APIKey = 83k9sM3wnfh5rdsZmzuUOULVfb8NT94UB
+
+[Notification Types]
+Discord  = Enabled
+Telegram = Enabled
+Pushover = Disabled
+TextMsg  = Disabled
+Alexa    = Disabled
+HASS     = Enabled
+
+
+[Notification Settings]
+# Note: Add additional notification settings for each notification type you set to 'True' above.
+# Do not add a section if it is set to Disabled. (Or you can add it, but have it commented out with a hashtag # like this comment)
+
+[DISCORD]
+# Your Discord Channel Webhook. Put your own here.
+discordWebHook = https://discordapp.com/api/webhooks/65330833450229050/C61YEVn24sJzpn5Ksp-JHRebC2J0GIJP13C2ZDOnTLyYJG8rWgUEtQpEunzGn7ysJ-Rq
+
+[TELEGRAM]
+# Get the Token by creating a bot by messaging @BotFather
+telegramBotToken = 983122417:AAH0yzTvrc6wUQWKd54S1lhK2zOgbQDBMu4
+# Get the ChatID by messaging your bot you created, or making your own group with the bot and messaging the group. Then get the ChatID for that conversation with the below step.
+# Then go to this url replacing <telegramBotToken> with your own Bots token and look for the chatID to use. https://api.telegram.org/bot<telegramBotToken>/getUpdates
+telegramChatID =  -281552332
+
+[PUSHOVER]
+pushoverAppToken = GetFromPushoverDotNet
+pushoverUserToken = GetFromPushoverDotNet
+# optional Pushover settings. Uncomment and set if wanted.
+#device = Device
+#title = Title
+#priority = Priority
+#sound = Sound
+
+[ALEXA]
+# Enter in the super long access code that the skill emailed you when you set it up in Alexa"
+alexaAccessCode = amzn1.ask.account.AEHQ4TXOFDZ3ZZLMCMBLAHG7IQ5MAV2SBKILQHSHRGOHTDOTDU567L71OTPD73UCJCIEZ36EIN3ALBESYXA4FM3EXDX745FXKPXXLVIEJJVIHYO2DXGMPXPWZDZSBHI46V3CCND6CCV7OY3SGGN2QQX2TXMP5M2Q4NJ6ZSJK6KIYP3MGMHGGIAJSYG4U2SJIWUF3R5FUPDNPA5I
+
+[TextMsg]
+# Note: I didn't want to code in all the carriers and all the emails. So only gmail is fully supported for now. If using 2FA, make a googel app password from here: https://myaccount.google.com/security
+# Feel free to do a pull request to add more, or just edit the below code with your own carrier and email settings.
+# Enter carrier email, should be in the format of: "@vtext.com", "@txt.att.net", "@messaging.sprintpcs.com", "@tmomail.net", "@msg.fi.google.com"
+CarrierEmail = @txt.att.net
+phoneNumber = 8053204589
+smtpServer = smtp.gmail.com
+smtpPort = 587
+fromAddress = Jaina@gmail.com
+emailUser = Jaina@gmail.com
+emailPass = jrxkyzwqjhedxklp
+
+[HASS]
+# This is probably way more advanced than most people will use, but it's here for those that want it.
+# I personally use this so my alexa device at my desk will announce when the price has dropped so I can logon to get it from the AH. - COVID Working from home perks
+# Your Home Assistant base url and port.
+hassURL = http://192.168.1.20:8123
+# token from Home Assistant
+hassToken = esJ0eXAiPiJKV1QiLCJnbGciOiJLUzI1NiJ9.eyJpc3MiOiIzYmJlZDI2ZWUyYjE0NWJhYTVmMzliNjU1Mzc4Y2ExMiIsImlhdCI6MTU3NzUyMTA2MCeiZXhwIjoxODkyODgxMDYwfQ.qYC4nC15fj0dBr7MRPqee2Dj_eQSS5rLPfdYhmhOi9U
+# entityid of the script you want to have execute (ie: script.2469182347234)
+entityID = script.1527523975283
+
+[Auction House Items to Monitor]
+# Add a seperate section for each AH Item you want to check. Make sure to have it named like the following.
+# The bracketed [AHItem#] must look like that with a unique number for each section.
+# Get the Item ID from wowhead or TSM websites.
+
+[AHItem1]
+Description = Tidespray Linen
+itemID      = 152576
+price       = 240000
+check       = Below
+
+[AHItem2]
+Description = Monelite Ore
+itemID      = 152512
+price       = 220000
+check       = Above
