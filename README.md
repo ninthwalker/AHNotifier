@@ -99,14 +99,17 @@ check       = Above
 ## How to use the windows Task Scheduler to run the script.
 Note: The WoW Auction House API (And therefore the TSM API as well) is only updated about once every hour. So I recommend for the scheduled task time, to only run at most once per hour.  
 
-Here are some simple instructions on how to create a scheduled task in windows to run this script:  
+Creating a scheduled task is pretty easy. Here is a website with some screenshots and basic instructions.  
+https://blog.netwrix.com/2018/07/03/how-to-automate-powershell-scripts-with-task-scheduler/  
+
 
 ## FAQ/Common Issues  
 1. This is powershell, so it does need windows and a computer that runs the script as scheduled unfortunately.  
+2. Maybe I'll port this to Linux someday. Running this on a little Raspberry Pi Zero W would allow it to be on all the time. And cost less than 2$ USD a year.  
 
 ## Screenshots & Videos  
 
 <img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/mobile.png" width="500">  
 
-![](https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/alert.png) ![]  
+![](https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/alert.png)  
 
