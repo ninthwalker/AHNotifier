@@ -110,4 +110,4 @@ https://blog.netwrix.com/2018/07/03/how-to-automate-powershell-scripts-with-task
 3. TODO: Add setting option to combine multiple AH Items into one alert instead of the seperate oens they are now.  
 
 ## Screenshots/Videos  
-![](https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/text-alert.png)  
+<img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/text-alert.png" width="250">  
