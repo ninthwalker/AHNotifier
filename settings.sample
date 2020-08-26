@@ -67,14 +67,15 @@ entityID = script.1527523975283
 # The bracketed [AHItem#] must look like that with a unique number for each section.
 # Get the Item ID from wowhead or TSM websites. 
 
-# The price must be in COPPER! This is just to avoid any rounding and price matching errors. To convert gold into copper is really easy.
-# Just multiply the gold price by 10000.
-# ie: 12g 70s 0c would become: 12.7 * 10000 = 127000 copper.
+# The price must be in COPPER! This is just to avoid any rounding and price matching errors. Conversion is easy!
 
-Description: Friendly name. Can be whatever you want.
-ItemID: get this ID from wowhead or TSM for the item you want to check for.
-Price: The price to alert on - In COPPER! (multiple gold by 10000 to get copper)
-Check: Can be either 'Above' or 'Below' This is if you want to be alerted when the price is at or above/below the price you set.
+# Gold: multiply the gold price by 10000. ie: 12g 70s 0c would become: 12.7 * 10000 = 127000 copper.
+# Silver: multiply the silver price by 100. ie: 58s 0c would become: 58 * 100 = 5800
+
+# Description: Friendly name. Can be whatever you want.
+# ItemID: get this ID from wowhead or TSM for the item you want to check for.
+# Price: The price to alert on - In COPPER! (multiple gold by 10000, or silver by 100 to get the price in copper)
+# Check: Can be either 'Above' or 'Below' This is if you want to be alerted when the price is at or above/below the price you set.
 
 [AHItem1]
 Description = Tidespray Linen
