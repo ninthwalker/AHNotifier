@@ -1,5 +1,6 @@
 <p align="center">
 <img align="center" src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/ahnotifier-logo.png" width="250"></p>  
+<img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/discord-alert.png">  
 Notifies you of prices for specific WoW Auction House Items.  
 Currently supports Discord, Telegram, Pushover, Text Messages, Alexa 'Notify Me' Skill, and Home Assistant scripts. If you want another notification type, let me know.    
   
@@ -108,4 +109,6 @@ https://blog.netwrix.com/2018/07/03/how-to-automate-powershell-scripts-with-task
 2. Maybe I'll port this to Linux someday. Running this on a little Raspberry Pi Zero W would allow it to be on all the time. And cost less than $2 USD a year.  
 3. TODO: Add setting option to combine multiple AH Items into one alert instead of the seperate oens they are now.  
 
+## Screenshots/Videos  
 
+<img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/text-alert.png">  
