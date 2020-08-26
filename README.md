@@ -1,7 +1,7 @@
 <p align="center">
 <img align="center" src="https://raw.githubusercontent.com/ninthwalker/BGNotifier/master/screenshots/AHNotifier-logo.png" width="250"></p>
-Sends a message when your World of Warcraft Battleground Queue has popped.  
-Currently supports Discord, Telegram, Text Messages, Alexa 'Notify Me' Skill, Home Assistant scripts and Pushover. If you want another notification type, let me know.    
+Notifies you of prices for specific WoW Auction House Items.  
+Currently supports Discord, Telegram, Pushover, Text Messages, Alexa 'Notify Me' Skill, and Home Assistant scripts. If you want another notification type, let me know.    
   
 
 ## Details/Requirements  
