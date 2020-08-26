@@ -74,9 +74,10 @@ Enter in your script's entity_id that you want to have run when the AH Alert is 
 ### [Auction House Items to Monitor]  
 Add a seperate section for each AH Item you want to check. Make sure to have it named like the following.  
 The bracketed [AHItem#] must look like that with a unique number for each section.   
-The price must be in COPPER! This is just to avoid any rounding and price matching errors. To convert gold into copper is really easy.  
-Just multiply the gold price by 10000.  
-ie: 12g 70s 0c would become: 12.7 * 10000 = 127000 copper.  
+The price must be in COPPER! This is just to avoid any rounding and price matching errors. Conversion is easy!  
+
+* Gold: multiply the gold price by 10000.  ie: 12g 70s 0c would become: 12.7 * 10000 = 127000 copper.  
+* Silver: multiply the silver price by 100. ie: 58s 0c would become: 58 * 100 = 5800  
 
 * Description: Friendly name. Can be whatever you want
 * ItemID: get this ID from wowhead or TSM for the item you want to check for.
