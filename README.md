@@ -20,9 +20,8 @@ Run the Script as a scheduled task in Windows and be alerted via one of the noti
 3. Configure the settings.txt file per the section below.  
 4. Schedule the script to run via a scheduled task on your computer per the section below.  
   
-### Settings.txt file setup  
+## Settings.txt file setup  
 Please see the settings.sample file for detailed info on the sections.  
-  
 Overview of settings.txt sections:  
 
 * **[Server Settings]**  
@@ -72,8 +71,14 @@ This is probably way more advanced than most people will use, but it's here for 
 Set your HASS URL, and API Token  
 Enter in your script's entity_id that you want to have run when the AH Alert is triggered.  
 
+
+## How to use the windows Task Scheduler to run the script.
+Note: The WoW Auction House API (And therefore the TSM API as well) is only updated about once every hour. So I recommend for the scheduled task time, to only run at most once per hour.  
+
+Here are some simple instructions on how to create a scheduled task in windows to run this script:  
+
 ## FAQ/Common Issues  
-1. This is powershell, so it does need windows and computer that runs the script as scheduled unfortunately.
+1. This is powershell, so it does need windows and computer that runs the script as scheduled unfortunately.  
 
 ## Screenshots & Videos  
 
