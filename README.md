@@ -71,6 +71,30 @@ This is probably way more advanced than most people will use, but it's here for 
 Set your HASS URL, and API Token  
 Enter in your script's entity_id that you want to have run when the AH Alert is triggered.  
 
+# [Auction House Items to Monitor]  
+Add a seperate section for each AH Item you want to check. Make sure to have it named like the following.  
+The bracketed [AHItem#] must look like that with a unique number for each section.  
+Get the Item ID from wowhead or TSM websites.  
+The price must be in COPPER! This is just to avoid any rounding and price matching errors. To convert gold into copper is really easy.  
+Just multiply the gold price by 10000.  
+ie: 12g 70s 0c would become: 12.7 * 10000 = 127000 copper.  
+
+* Description: Friendly name. Can be whatever you want
+* ItemID: get this ID from wowhead or TSM for the item you want to check for.
+* Price: The price to alert on in COPPER!
+* Check: can be either 'Above' or 'Below' This is if you want to be alerted when the price is at or above/below the price you set.
+
+[AHItem1]  
+Description = Tidespray Linen  
+itemID      = 152576  
+price       = 22000  
+check       = Below  
+
+[AHItem2]  
+Description = Monelite Ore  
+itemID      = 152512  
+price       = 51000  
+check       = Above  
 
 ## How to use the windows Task Scheduler to run the script.
 Note: The WoW Auction House API (And therefore the TSM API as well) is only updated about once every hour. So I recommend for the scheduled task time, to only run at most once per hour.  
