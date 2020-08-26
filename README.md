@@ -73,15 +73,14 @@ Enter in your script's entity_id that you want to have run when the AH Alert is 
 
 ### [Auction House Items to Monitor]  
 Add a seperate section for each AH Item you want to check. Make sure to have it named like the following.  
-The bracketed [AHItem#] must look like that with a unique number for each section.  
-Get the Item ID from wowhead or TSM websites.  
+The bracketed [AHItem#] must look like that with a unique number for each section.   
 The price must be in COPPER! This is just to avoid any rounding and price matching errors. To convert gold into copper is really easy.  
 Just multiply the gold price by 10000.  
 ie: 12g 70s 0c would become: 12.7 * 10000 = 127000 copper.  
 
 * Description: Friendly name. Can be whatever you want
 * ItemID: get this ID from wowhead or TSM for the item you want to check for.
-* Price: The price to alert on in COPPER!
+* Price: The price to alert on - In COPPER! (multiple gold by 10000 to get copper)
 * Check: can be either 'Above' or 'Below' This is if you want to be alerted when the price is at or above/below the price you set.
 
 [AHItem1]  
@@ -107,9 +106,4 @@ https://blog.netwrix.com/2018/07/03/how-to-automate-powershell-scripts-with-task
 1. This is powershell, so it does need windows and a computer that runs the script as scheduled unfortunately.  
 2. Maybe I'll port this to Linux someday. Running this on a little Raspberry Pi Zero W would allow it to be on all the time. And cost less than 2$ USD a year.  
 
-## Screenshots & Videos  
-
-<img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/mobile.png" width="500">  
-
-![](https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/alert.png)  
 
