@@ -115,7 +115,8 @@ This will keep the script window hidden and set the execution policy to allow yo
 ## FAQ/Common Issues  
 1. This is powershell, so it does need windows and a computer that runs the script as scheduled unfortunately.  
 2. Maybe I'll port this to Linux someday. Running this on a little Raspberry Pi Zero W would allow it to be on all the time. And cost less than $2 USD a year.  
-3. TODO: Add setting option to combine multiple AH Items into one alert instead of the seperate ones they are now.  
+3. If your Scheduled Task is still showing a window flash for a quick second when it runs, try using the `Run whether user is logged on or not` option.
+4. TODO: Add setting option to combine multiple AH Items into one alert instead of the seperate ones they are now.  
 
 ## Screenshots/Videos  
 <img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/text-alert.png" width="400">  
