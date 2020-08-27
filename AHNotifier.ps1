@@ -164,12 +164,13 @@ function AHNotifier {
 
 }
 
-
 # Get AH Data for each item specified
 
 $ahData = @()
 foreach ($item in $items) {
-    $ahData += Invoke-RestMethod -Uri "https://api.tradeskillmaster.com/v1/item/$region/$server/$($item.itemID)?format=json&apiKey=$apiKey"
+
+$ahData += Invoke-RestMethod -Uri "https://api.tradeskillmaster.com/v1/item/$region/$server/$($item.itemID)?format=json&apiKey=$apiKey"
+
 }
 
 # Get current update time
@@ -248,7 +249,7 @@ foreach ($item in $items) {
             }
             else {
                 # Don't send alert
-                #write-host "$($details.name) is NOT below your set price of $($item.price) - NO ALERT TRIGGERED" -ForegroundColor Red
+                    #write-host "$($details.name) is NOT below your set price of $($item.price) - NO ALERT TRIGGERED" -ForegroundColor Red
             }
         }
 
