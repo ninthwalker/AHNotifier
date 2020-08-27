@@ -1,0 +1,51 @@
+# See settings.sample file for examples and descriptions for each section
+# https://github.com/ninthwalker/AHNotifier/blob/master/settings.sample
+
+[Server Settings]
+Region = US
+Server = Sargeras
+APIKey = 2390845y7uhfwe098ry23
+
+[Notification Types]
+Discord  = Enabled
+Telegram = Disabled
+Pushover = Disabled
+TextMsg  = Enabled
+Alexa    = Disabled
+HASS     = Disabled
+
+
+[Notification Settings]
+
+[DISCORD]
+discordWebHook = https://discordapp.com/api/webhooks/659308345060229150/C61YEVn24sRzpn5Ksp-JHRebC2J0GIJP13b2ZDonTLyYJG8DWgUEtQpEunzGn7ysJ-fq
+
+[TextMsg]
+CarrierEmail = @txt.att.net
+phoneNumber = 8053107959
+smtpServer = smtp.gmail.com
+smtpPort = 587
+fromAddress = Jaina@gmail.com
+emailUser = Jaina@gmail.com
+emailPass = grasdfkeulkyxgep
+
+[Auction House Items to Monitor]
+
+[AHItem1]
+Description = Tidespray Linen
+itemID      = 152576
+price       = 21000
+check       = Below
+
+[AHItem2]
+Description = Monelite Ore
+itemID      = 152512
+price       = 220000
+check       = Above
+
+# Commented out, will not check on this
+#[AHItem3]
+#Description = Wool Cloth
+#itemID      = 2592
+#price       = 6000
+#check       = Below
