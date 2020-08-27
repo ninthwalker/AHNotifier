@@ -115,5 +115,5 @@ This will keep the script window hidden and set the execution policy to allow yo
 
 ## Screenshots/Videos  
 <img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/text-alert.png" width="400">  
-<img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/task1.png" width="400">  
-<img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/task2.png" width="400">  
+<img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/task1.jpg" width="400">  
+<img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/task2.jpg" width="400">  
