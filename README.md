@@ -32,11 +32,15 @@ Enter your TSM API Key from [here](https://www.tradeskillmaster.com/user)
 
 * **[Notification Types]**  
 Set to 'Disabled' or 'Enabled' for the types you want to use.  
-You can set one or all.  
+You can pick which ones you want Enabled or Disabled.
 
 * **[Notification Settings]**  
 For each Notification type that you set to 'Enabled' in the above section, create a corresponding section here for it.  
 See the setttings.sample for details of how this should look. 
+
+* **Toast**  
+Set to Enabled to show the Windows Toast Notifications. No further configuration is necessary.  
+If you do not have notifcations on windows enabled, you can turn them on under `Settings > System > Notifications & actions.`
 
 * **Discord**  
 Enter in the discord webhook for the channel you would like the notification to go to.  
