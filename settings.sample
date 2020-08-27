@@ -10,6 +10,7 @@ Pushover = Disabled
 TextMsg  = Disabled
 Alexa    = Disabled
 HASS     = Enabled
+Toast    = Enabled
 
 
 [Notification Settings]
