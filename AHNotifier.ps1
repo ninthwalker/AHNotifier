@@ -51,7 +51,7 @@ Function Get-Settings ([string]$fileName) {
        $ini
 } 
 
-$settings = Get-Settings "C:\scripts\AHNotifier\settings.txt"
+$settings = Get-Settings .\Settings.txt
 
 ### Server and TSM Settings ###
 $region = $settings.'server settings'.region
