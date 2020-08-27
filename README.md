@@ -103,6 +103,10 @@ Note: The WoW Auction House API (And therefore the TSM API as well) is only upda
 Creating a scheduled task is pretty easy. Here is a website with some screenshots and basic instructions.  
 https://blog.netwrix.com/2018/07/03/how-to-automate-powershell-scripts-with-task-scheduler/  
 
+* Here are some specific settings to use for this script and see the screenshots below for an example of the Scheduled task as well  
+In the Action Section of editing your task, add the following line in the 'Add Arguments' box. (change the -File path to your own):  
+`-executionpolicy bypass -noprofile -windowstyle hidden -File "C:\scripts\AHNotifier\AHNotifier.ps1"`  
+This will keep the script window hidden and set the execution policy to allow your computer to run the script.  
 
 ## FAQ/Common Issues  
 1. This is powershell, so it does need windows and a computer that runs the script as scheduled unfortunately.  
@@ -111,3 +115,5 @@ https://blog.netwrix.com/2018/07/03/how-to-automate-powershell-scripts-with-task
 
 ## Screenshots/Videos  
 <img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/text-alert.png" width="400">  
+<img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/task1.png" width="400">  
+<img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/task2.png" width="400">  
