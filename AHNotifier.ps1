@@ -169,9 +169,7 @@ function AHNotifier {
 
 $ahData = @()
 foreach ($item in $items) {
-
-$ahData += Invoke-RestMethod -Uri "https://api.tradeskillmaster.com/v1/item/$region/$server/$($item.itemID)?format=json&apiKey=$apiKey"
-
+    $ahData += Invoke-RestMethod -Uri "https://api.tradeskillmaster.com/v1/item/$region/$server/$($item.itemID)?format=json&apiKey=$apiKey"
 }
 
 # Get current update time
@@ -217,7 +215,7 @@ foreach ($item in $items) {
             }
             else {
             # Don't send Alert
-                write-host "$($details.name) is NOT above your set price of $($item.price) - NO ALERT TRIGGERED" -ForegroundColor Red
+                #write-host "$($details.name) is NOT above your set price of $($item.price) - NO ALERT TRIGGERED" -ForegroundColor Red
             }
         }
 
@@ -235,7 +233,7 @@ foreach ($item in $items) {
 
                 
                 if ( [int64]$item.price -ge 10000) {
-                    write-host "$item.price"
+
                     $setPrice = "$($item.price/10000)g" # gold
                 }
                 else {
@@ -250,13 +248,13 @@ foreach ($item in $items) {
             }
             else {
                 # Don't send alert
-                write-host "$($details.name) is NOT below your set price of $($item.price) - NO ALERT TRIGGERED" -ForegroundColor Red
+                #write-host "$($details.name) is NOT below your set price of $($item.price) - NO ALERT TRIGGERED" -ForegroundColor Red
             }
         }
 
     }
     else {
-        write-host "Quantity available is less than 1" -ForegroundColor Red
+        #write-host "Quantity available is less than 1" -ForegroundColor Red
     }
 
 }
