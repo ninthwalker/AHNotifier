@@ -65,6 +65,7 @@ if ($settings.'Notification Types'.Pushover -eq "Enabled") {$pushover = $True}
 if ($settings.'Notification Types'.TextMsg -eq "Enabled") {$textMsg = $True} 
 if ($settings.'Notification Types'.Alexa -eq "Enabled") {$alexa = $True}
 if ($settings.'Notification Types'.HASS -eq "Enabled") {$hass = $True}
+if ($settings.'Notification Types'.toast -eq "Enabled") {$toast = $True}
 
 ### AUCTION HOUSE SETTINGS ###
 
