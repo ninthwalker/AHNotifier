@@ -51,7 +51,7 @@ Function Get-Settings ([string]$fileName) {
        $ini
 } 
 
-$settings = Get-Settings .\Settings.txt
+$settings = Get-Settings .\settings.txt
 
 ### Server and TSM Settings ###
 $region = $settings.'server settings'.region
@@ -83,8 +83,17 @@ $settings.GetEnumerator() | ForEach-Object {
 }
 
 ### Windows Toast Notification ###
+
+#set App ID
+$wow = Get-StartApps | ? {$_.Name -eq "World of Warcraft"}
+if ($wow) {
+    $app = $wow.AppID
+}
+else {
+    $app = '{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\WindowsPowerShell\v1.0\powershell.exe'
+}
+
 function New-Toast {
-$app = '{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\WindowsPowerShell\v1.0\powershell.exe'
 [Windows.UI.Notifications.ToastNotificationManager, Windows.UI.Notifications, ContentType = WindowsRuntime]
 
 $Template = [Windows.UI.Notifications.ToastTemplateType]::ToastImageAndText01
