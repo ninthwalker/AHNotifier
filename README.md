@@ -1,6 +1,7 @@
 <p align="center">
 <img align="center" src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/ahnotifier-logo.png" width="250"></p>  
 <img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/discord-alert.png">  
+<img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/windows_toast.png" width="361">  
 Notifies you of prices for specific WoW Auction House Items.  
 Currently supports Discord, Telegram, Pushover, Text Messages, Alexa 'Notify Me' Skill, Windows 'Toast' Notifications and Home Assistant scripts. If you want another notification type, let me know.    
   
@@ -16,10 +17,12 @@ Enter in your Realm/TSM API Info and the Auction House items you would like to b
 Run the Script as a scheduled task in Windows and be alerted via one of the notification types when your price is matched.  
 
 ## Overview of Setup steps  
-1. Download the AHNotifier.ps1 and the settings.txt files.  
-2. Place the 2 files in the same folder or directory on your computer.  
-3. Configure the settings.txt file per the section below.  
-4. Schedule the script to run via a scheduled task on your computer per the section below.  
+1. Download these 3 files and place them in the same folder/directory on your computer:  
+* AHNotifier.ps1  
+* AHNotifier_Task.vbs
+* settings.txt    
+3. Configure the settings.txt file per the instructions below.  
+4. Schedule the script to run via a scheduled task on your computer per the instructions below.  
   
 ## Settings.txt file setup  
 Please see the settings.sample file for detailed info on the sections.  
@@ -29,10 +32,11 @@ Overview of settings.txt sections:
 Enter your Region (ie: US or  EU)  
 Enter your Server Name  
 Enter your TSM API Key from [here](https://www.tradeskillmaster.com/user)    
+BulkMode: If Checkng on a lot of AH items (Like More than 25-50), then set this to Enabled and only run the script at most once per hour to avoid API rate limits.  
 
 * **[Notification Types]**  
 Set to 'Disabled' or 'Enabled' for the types you want to use.  
-You can pick which ones you want Enabled or Disabled.
+You can pick which ones you want Enabled or Disabled.  
 
 * **[Notification Settings]**  
 For each Notification type that you set to 'Enabled' in the above section, create a corresponding section here for it.  
@@ -40,7 +44,7 @@ See the setttings.sample for details of how this should look.
 
 * **Toast**  
 Set to Enabled to show the Windows Toast Notifications. No further configuration is necessary.  
-If you do not have notifcations on windows enabled, you can turn them on under `Settings > System > Notifications & actions.`
+If you do not have notifcations on windows enabled, you can turn them on under `Settings > System > Notifications & actions.`  
 
 * **Discord**  
 Enter in the discord webhook for the channel you would like the notification to go to.  
@@ -102,24 +106,41 @@ price       = 51000
 check       = Above  
 
 ## How to use the windows Task Scheduler to run the script.
-Note: The WoW Auction House API (And therefore the TSM API as well) is only updated about once every hour. So I recommend for the scheduled task time, to only run at most once per hour.  
+Note: The WoW Auction House API (And therefore the TSM API as well) is only updated about once every hour. So I recommend for the scheduled task time, to only run once per hour.
 
-Creating a scheduled task is pretty easy. Here is a website with some screenshots and basic instructions.  
-https://blog.netwrix.com/2018/07/03/how-to-automate-powershell-scripts-with-task-scheduler/  
+Creating a scheduled task is pretty easy. There are some specifics for this script though to make it work how we want.  
+Use these basic steps to get started and see the screenshots below for an example of the Scheduled task as well:  
 
-* Here are some specific settings to use for this script and see the screenshots below for an example of the Scheduled task as well  
-In the Action Section of editing your task, add the following line in the 'Add Arguments' box. (change the -File path to your own):  
-`-executionpolicy bypass -noprofile -windowstyle hidden -File "C:\scripts\AHNotifier\AHNotifier.ps1"`  
-This will keep the script window hidden and set the execution policy to allow your computer to run the script.  
+1. Create a new Scheduled task (Search: Task Scheduler > Create Task  
+    1. Enter a friendly name. ie: AH Notifier  
+1. Triggers tab: New (Suggestions below for how often, but do what you want here)  
+    1. Select Daily and enter a date/time to start at. Recur every '1' days.
+    1. Check the box for 'Repeat task every' and select 1 hour in the dropdown. For a duration of '1 day'  
+    1. Click Ok  
+1. Actions Tab: New
+    1. Action: Start a program  
+    1. Program/script box enter: AHNotifier_Task.vbs  
+    1. Start in box: Enter in the path to where you saved the 3 files required ie: C:\users\Jaina\Desktop\AHNotifier
+    1. Click ok.  
+1. Click ok to save the Scheduled Task    
 
 ## FAQ/Common Issues  
-1. This is powershell, so it does need windows and a computer that runs the script as scheduled unfortunately.  
+1. This is powershell, so it does need Wndows and a computer that runs the script as scheduled unfortunately.  
 2. Maybe I'll port this to Linux someday. Running this on a little Raspberry Pi Zero W would allow it to be on all the time. And cost less than $2 USD a year.  
-3. If your Scheduled Task is still showing a window flash for a quick second when it runs, try using the `Run whether user is logged on or not` option.
-4. TODO: Add setting option to combine multiple AH Items into one alert instead of the seperate ones they are now.  
-5. TODO: Add multiple server support
+3. TODO: Add setting option to combine multiple AH Items into one alert instead of the seperate ones they are now. - (aybe? Might not be needed or wanted)  
+4. TODO: Add the ability to check multiple servers Auction Houses. Limited to one for right now.  
+5. TODO: Create a video walkthrough of the process.  
+
+## Advanced config
+If using the windows toast notification option, there are 3 buttons that can appear. Open WoW, Details, and Dismiss.  
+* Dismiss: Self explanatory, closes the notification.  
+* Details: Opens up your default web browser to the TSM Details page of the item that was alerted on.  
+* Open WoW: Clicking this will launch the World of Warcraft launcher program to sign into WoW.  
+However, the 'Open WoW' takes some advanced config. If you ant to see and use this feature of the Notification, then please follow the steps below:  
+
+TODO - Add registry steps here for Open Wow  
 
 ## Screenshots/Videos  
-<img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/text-alert.png" width="400">  
-<img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/task1.jpg" width="450">  
-<img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/task2.png" width="450">  
+<img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/text-alert.png" width="400">    
+<img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/task_trigger.png" width="450">  
+<img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/task_action.png" width="450">  

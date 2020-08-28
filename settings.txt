@@ -5,6 +5,7 @@
 Region = US
 Server = Sargeras
 APIKey = 2390845y7uhfwe098ry23
+BulkMode = Disabled
 
 [Notification Types]
 Discord  = Enabled
@@ -14,7 +15,6 @@ TextMsg  = Enabled
 Alexa    = Disabled
 HASS     = Disabled
 Toast    = Enabled
-
 
 [Notification Settings]
 
@@ -35,7 +35,7 @@ emailPass = grasdfkeulkyxgep
 [AHItem1]
 Description = Tidespray Linen
 itemID      = 152576
-price       = 21000
+price       = 25000
 check       = Below
 
 [AHItem2]
