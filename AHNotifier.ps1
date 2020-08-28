@@ -1,6 +1,6 @@
 ######################################################################
 # Name: AHNotifier                                                   #
-# Desc: Notifies you of prices for specific wow Auction House Items  #
+# Desc: Notifies you of prices for WoW Auction House Items           #
 # Author: Ninthwalker                                                #
 # Instructions: https://github.com/ninthwalker/AHNotifier            #
 # Date: 28AUG2020                                                    #
@@ -14,8 +14,9 @@
 # Added Settings file instead of having to edit this script directly #
 ## 1.2                                                               #
 # Added Windows Toast Notification Option                            #
-## 1.3
-## Additional Toast options w/ Item Icons and Buttons
+## 1.3                                                               #
+# Additional Toast options w/ Item Icons and Buttons                 #
+# Added bulkmode option to check more items per hour if wanting      #
 ######################################################################
 
 ### setup environment ###
