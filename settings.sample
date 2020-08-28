@@ -2,6 +2,13 @@
 Region = US
 Server = Sargeras
 APIKey = 83k9sM3wnfh5rdsZmzuUOULVfb8NT94UB
+BulkMode = Disabled 
+
+# bulk mode is to allow for higher rate limits with the API.
+# If BulkMode = Disabled: One API call per item checked. Up to 50 items an hour. Up to 500 in a day total.
+# If BulkMode = Enabled: One API call gets the entire Server Auction house (About 2-10Mb transfer).
+# This allows you to check the entire auction house up to 25 times a day. And can check every hour then on however many items you want.
+# Recommendation: Set to Disabled if checking for less than 15-20 items every hour. Enable it if you are checking more than that.
 
 [Notification Types]
 Discord  = Enabled
