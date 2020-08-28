@@ -1,6 +1,7 @@
 <p align="center">
 <img align="center" src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/ahnotifier-logo.png" width="250"></p>  
 <img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/discord-alert.png">  
+<img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/windows_toast.png" width="250">  
 Notifies you of prices for specific WoW Auction House Items.  
 Currently supports Discord, Telegram, Pushover, Text Messages, Alexa 'Notify Me' Skill, Windows Toast Notifications and Home Assistant scripts. If you want another notification type, let me know.    
   
@@ -135,7 +136,7 @@ If using the windows toast notification option, there are 3 buttons that can app
 * Dismiss: Self explanatory, closes the notification.  
 * Details: Opens up your default web browser to the TSM Details page of the item that was alerted on.  
 * Open WoW: Clicking this will launch the World of Warcraft launcher program to sign into WoW.  
-However, the 'Open Wow' takes some advanced config. If you ant to see and use this feature of the Notification, then please follow the steps below:  
+However, the 'Open WoW' takes some advanced config. If you ant to see and use this feature of the Notification, then please follow the steps below:  
 
 TODO - Add registry steps here for Open Wow  
 
