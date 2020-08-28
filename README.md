@@ -130,6 +130,15 @@ Use these basic steps to get started and see the screenshots below for an exampl
 4. TODO: Add the ability to check multiple servers Auction Houses. Limited to one for right now.
 5. TODO: Create a video walkthrough of the process.
 
+## Advanced config
+If using the windows toast notification option, there are 3 buttons that can appear. Open WoW, Details, and Dismiss.  
+* Dismiss: Self explanatory, closes the notification.  
+* Details: Opens up your default web browser to the TSM Details page of the item that was alerted on.  
+* Open WoW: Clicking this will launch the World of Warcraft launcher program to sign into WoW.  
+However, the 'Open Wow' takes some advanced config. If you ant to see and use this feature of the Notification, then please follow the steps below:  
+
+TODO - Add registry steps here for Open Wow  
+
 ## Screenshots/Videos  
 <img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/text-alert.png" width="400">    
 <img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/task_trigger.png" width="450">  
