@@ -1,6 +1,9 @@
 <p align="center">
 <img align="center" src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/ahnotifier-logo.png" width="250"></p>  
-<img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/windows_toast.png" width="361"><img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/discord-alert.png">  
+<p float="left">
+  <img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/windows_toast.png" width="361">
+  <img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/discord-alert.png" width="450"> 
+</p> 
 Notifies you of prices for specific WoW Auction House Items.  
 Currently supports Discord, Telegram, Pushover, Text Messages, Alexa 'Notify Me' Skill, Windows 'Toast' Notifications and Home Assistant scripts. If you want another notification type, let me know.    
   
