@@ -111,16 +111,16 @@ Creating a scheduled task is pretty easy. There are some specifics for this scri
 Use these basic steps to get started and see the screenshots below for an example of the Scheduled task as well:  
 
 1. Create a new Scheduled task (Search: Task Scheduler > Create Task  
-  1. Enter a friendly name. ie: AH Notifier  
+    1. Enter a friendly name. ie: AH Notifier  
 2. Triggers tab: New (Suggestions below for how often, but do what you want here)  
-  2. Select Daily and enter a date/time to start at. Recur every '1' days.
-  2. Check the box for 'Repeat task every' and select 1 hour in the dropdown. For a duration of '1 day'  
-  2. Click Ok  
+    2. Select Daily and enter a date/time to start at. Recur every '1' days.
+    2. Check the box for 'Repeat task every' and select 1 hour in the dropdown. For a duration of '1 day'  
+    2. Click Ok  
 3. Actions Tab: New
-  3. Action: Start a program  
-  3. Program/script box enter: AHNotifier_Task.vbs  
-  3. Start in box: Enter in the path to where you saved the 3 files required ie: C:\users\Jaina\Desktop\AHNotifier
-  3. Click ok.  
+    3. Action: Start a program  
+    3. Program/script box enter: AHNotifier_Task.vbs  
+    3. Start in box: Enter in the path to where you saved the 3 files required ie: C:\users\Jaina\Desktop\AHNotifier
+    3. Click ok.  
 4. Click ok to save the Scheduled Task    
 
 ## FAQ/Common Issues  
