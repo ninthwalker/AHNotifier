@@ -1,7 +1,7 @@
 <p align="center">
 <img align="center" src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/ahnotifier-logo.png" width="250"></p>  
 <p float="left">
-  <img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/windows_toast.png" width="300">
+  <img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/windows_toast.png" width="50%">
   <img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/discord-alert2.png" width="300"> 
 </p> 
 Notifies you of prices for specific WoW Auction House Items.  
