@@ -3,7 +3,7 @@
 <img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/discord-alert.png">  
 <img src="https://raw.githubusercontent.com/ninthwalker/AHNotifier/master/screenshots/windows_toast.png" width="361">  
 Notifies you of prices for specific WoW Auction House Items.  
-Currently supports Discord, Telegram, Pushover, Text Messages, Alexa 'Notify Me' Skill, Windows Toast Notifications and Home Assistant scripts. If you want another notification type, let me know.    
+Currently supports Discord, Telegram, Pushover, Text Messages, Alexa 'Notify Me' Skill, Windows 'Toast' Notifications and Home Assistant scripts. If you want another notification type, let me know.    
   
 
 ## Details/Requirements  
@@ -36,15 +36,15 @@ BulkMode: If Checkng on a lot of AH items (Like More than 25-50), then set this 
 
 * **[Notification Types]**  
 Set to 'Disabled' or 'Enabled' for the types you want to use.  
-You can pick which ones you want Enabled or Disabled.   
+You can pick which ones you want Enabled or Disabled.  
 
 * **[Notification Settings]**  
 For each Notification type that you set to 'Enabled' in the above section, create a corresponding section here for it.  
 See the setttings.sample for details of how this should look. 
 
-* **[Toast]**  
-Set to Enabled to show the Windows Toast Notifications. No further configuration is necessary.
-If you do not have notifcations on windows enabled, you can turn them on under `Settings > System > Notifications & actions`
+* **Toast**  
+Set to Enabled to show the Windows Toast Notifications. No further configuration is necessary.  
+If you do not have notifcations on windows enabled, you can turn them on under `Settings > System > Notifications & actions.`  
 
 * **Discord**  
 Enter in the discord webhook for the channel you would like the notification to go to.  
@@ -128,8 +128,8 @@ Use these basic steps to get started and see the screenshots below for an exampl
 1. This is powershell, so it does need Wndows and a computer that runs the script as scheduled unfortunately.  
 2. Maybe I'll port this to Linux someday. Running this on a little Raspberry Pi Zero W would allow it to be on all the time. And cost less than $2 USD a year.  
 3. TODO: Add setting option to combine multiple AH Items into one alert instead of the seperate ones they are now. - (aybe? Might not be needed or wanted)  
-4. TODO: Add the ability to check multiple servers Auction Houses. Limited to one for right now.
-5. TODO: Create a video walkthrough of the process.
+4. TODO: Add the ability to check multiple servers Auction Houses. Limited to one for right now.  
+5. TODO: Create a video walkthrough of the process.  
 
 ## Advanced config
 If using the windows toast notification option, there are 3 buttons that can appear. Open WoW, Details, and Dismiss.  

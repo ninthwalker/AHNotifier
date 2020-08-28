@@ -67,6 +67,7 @@ If (!(Test-Path $env:TEMP\AHNotifier_ToastImg.png)) {
 $region = $settings.'server settings'.region
 $server = $settings.'server settings'.server
 $apiKey = $settings.'server settings'.apikey
+if ($settings.'Server Settings'.BulkMode -eq "Enabled") {$bulkMode = $True} else {$bulkMode = $False}
 
 # notification types
 if ($settings.'Notification Types'.Discord -eq "Enabled")  {$discord = $True} else {$discord = $False}
@@ -76,7 +77,6 @@ if ($settings.'Notification Types'.TextMsg -eq "Enabled") {$textMsg = $True} els
 if ($settings.'Notification Types'.Alexa -eq "Enabled") {$alexa = $True} else {$alexa = $False}
 if ($settings.'Notification Types'.HASS -eq "Enabled") {$hass = $True} else {$hass = $False}
 if ($settings.'Notification Types'.Toast -eq "Enabled") {$toast = $True} else {$toast = $False}
-if ($settings.'Server Settings'.BulkMode -eq "Enabled") {$bulkMode = $True} else {$bulkMode = $False}
 
 ### AUCTION HOUSE SETTINGS ###
 
